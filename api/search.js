@@ -12,12 +12,16 @@ export default async function handler(req, res) {
 
   // Multiple public JioSaavn API instances
   // If one is down, we try the next one
+ // const INSTANCES = [
+ //   `https://jiosaavn-api-privatecvc2.vercel.app/api/search/songs?query=${encodeURIComponent(q)}&limit=${limit}`,
+ //   `https://jiosaavn-api-two.vercel.app/api/search/songs?query=${encodeURIComponent(q)}&limit=${limit}`,
+ //   `https://saavn.dev/api/search/songs?query=${encodeURIComponent(q)}&limit=${limit}&page=1`,
+ //   `https://jiosaavn-api.vercel.app/api/search/songs?query=${encodeURIComponent(q)}&limit=${limit}`,
+ // ];
+
   const INSTANCES = [
-    `https://jiosaavn-api-privatecvc2.vercel.app/api/search/songs?query=${encodeURIComponent(q)}&limit=${limit}`,
-    `https://jiosaavn-api-two.vercel.app/api/search/songs?query=${encodeURIComponent(q)}&limit=${limit}`,
-    `https://saavn.dev/api/search/songs?query=${encodeURIComponent(q)}&limit=${limit}&page=1`,
-    `https://jiosaavn-api.vercel.app/api/search/songs?query=${encodeURIComponent(q)}&limit=${limit}`,
-  ];
+  `https://jiosaavn-api-2-liard.vercel.app/api/search/songs?query=${encodeURIComponent(q)}&limit=${limit}`,
+];
 
   const hdrs = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
