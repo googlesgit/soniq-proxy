@@ -1,0 +1,9 @@
+{
+  "name": "soniq-proxy",
+  "version": "1.0.0",
+  "description": "CORS proxy for SONIQ music player",
+  "type": "module",
+  "engines": {
+    "node": "20.x"
+  }
+}
